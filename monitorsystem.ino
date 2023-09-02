@@ -43,30 +43,13 @@ void loop()
   {
     WiFiClient client;
 
-    Serial.print("Temperature = ");
-    Serial.print(bmp.readTemperature());
-    Serial.println(" *C");
 
-    Serial.print("Pressure = ");
-    Serial.print(bmp.readPressure());
-    Serial.println(" Pa");
+    
+  //CODE
 
-    Serial.print("Altitude = ");
-    Serial.print(bmp.readAltitude());
-    Serial.println(" meters");
 
-    float h = dht.readHumidity();
-    if (isnan(h))
-    {
-      Serial.println("Failed to read from DHT sensor!");
-      return;
-    }
-    else
-    {
-      Serial.print("Humidity: ");
-      Serial.print(h);
-    }
 
+    
   }
   else 
   {
